@@ -1,0 +1,31 @@
+
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+
+<!ELEMENT location EMPTY>
+<!ELEMENT book (preface,Title,Authour,parts)>
+<!ELEMENT preface (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Authour (#PCDATA)>
+<!ELEMENT parts (part+)>
+<!ELEMENT part (Title,chapters)>
+<!ELEMENT chapters (chapter)+>
+<!ELEMENT chapter (Title,summery,sections)>
+<!ELEMENT summery (#PCDATA)>
+<!ELEMENT sections (section+)>
+<!ELEMENT section (content,pragraph)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT pragraph (#PCDATA)>
+
+
+<!ATTLIST book Isbn CDATA #REQUIRED>
+<!ATTLIST library description CDATA #REQUIRED>
+<!ATTLIST location address CDATA #IMPLIED>
+
+
+
+
+
+
+
+<!ELEMENT library (location,book+)>

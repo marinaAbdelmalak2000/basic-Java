@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 11, 2022, 12:39:17 PM
+    Author     : HP
+*/
+
+#txt{
+    
+    -fx-font:60px "BOLD";
+    -fx-fill: #eb2020;
+  
+
+}
+.root{
+     -fx-background-color: linear-gradient(to top, #000000, #363062 ,black);
+}
+
+
